@@ -1,0 +1,3 @@
+
+https://mail.mozilla.org/pipermail/es-discuss/2008-August/006837.html
+	Brendan Eich announces Ecmascript harmony

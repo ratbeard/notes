@@ -1,4 +1,18 @@
 
+Linux 2012
+----------
+http://www.youtube.com/watch?v=9bQc_z-Cb7E
+brtfs
+
+http://www.youtube.com/watch?v=Sye3mu-EoTI
+bash shell
+
+http://lwn.net/Articles/476263/
+Lists all vidoes in a comment
+
+
+
+
 # Rich Hickey - Design Composition Performance
 
 http://www.infoq.com/presentations/Design-Composition-Performance?utm_source=infoq&utm_medium=videos_homepage&utm_campaign=videos_row2
@@ -47,4 +61,14 @@ key idea - limit propagation of failure
 checkout - jim gray, why do computers stop and what can be done about it.
 halt on failure - let supervisor handle, don't make things worse.
 OOP not about encapsulating state or inheritance - about (pure) messaging and polymorphism.
+
+
+
+# Peter Thiel and Andy Kessler on the state of technology and innovation 
+http://www.youtube.com/watch?v=jX07zPupNdc
+
+Debate on is the rate of technological progress slowing down.  Some areas have large innovation rate, most have not improved much in the last 40 years.  Median income
+not raised much.  A robot that can fold laundry is still very far away.  
+
+Regulation is a huge problem, in energy, biotech.
 

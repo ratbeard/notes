@@ -25,5 +25,12 @@ Keys:
 
 # Programs / Commands
 
+		sudo shutdown -h now
+		sudo reboot
+
 # Shell scripting
 
+
+# ssh
+
+		cat ~/.ssh/id_rsa.pub | ssh user@hostname 'mkdir -p .ssh && cat >> .ssh/authorized_keys'

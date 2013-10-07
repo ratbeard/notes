@@ -1,5 +1,7 @@
 
-`[d]` indicates a shortcut of `prefix d`.  The default prefix is `ctrl+b`.
+`[d]` indicates a shortcut of `prefix d`.  
+My prefix - 
+Wefault prefix - `ctrl+b`
 
 Sessions
 

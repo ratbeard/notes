@@ -123,7 +123,20 @@ Example of require, directive with controller + link:
 			});
 		</script>
 
-[1]: http://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/
+http://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/
+overview
+
+http://www.ng-newsletter.com/posts/directives.html
+Great directives article
+
+http://thesmithfam.org/blog/2012/12/17/communicating-between-directives-in-angularjs/
+inter-directive communication using controller
+
+http://henriquat.re/directives/advanced-directives-combining-angular-with-existing-components-and-jquery/angularAndJquery.html
+wrapping jquery datepicker input in a directive
+
+http://icelab.com.au/articles/levelling-up-with-angularjs-building-a-reusable-click-to-edit-directive/
+Click to edit directive
 
 Animate
 ------
@@ -141,3 +154,14 @@ Check
 -----
 https://leanpub.com/recipes-with-angular-js
 	book preview
+
+[ngModelController]: https://groups.google.com/forum/#!topic/angular/cvHU-AUOP4U
+
+http://stackoverflow.com/questions/15676614/directive-link-vs-compile-vs-controller
+http://stackoverflow.com/questions/12546945/difference-between-the-controller-and-link-functions-when-defining-an-angula?lq=1
+controller vs link vs compile
+
+http://www.benlesh.com/2013/08/angular-compile-how-it-works-how-to-use.html
+compile
+
+

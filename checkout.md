@@ -1,3 +1,6 @@
+http://www.musiciansfriend.com/keyboards-midi/akai-professional-mpk-mini-laptop-production-keyboard
+midi keyboard
+
 # learn
 
 ## angular
@@ -9,6 +12,7 @@ http://egghead.io/
 
 ## docker / deployment
 
+http://www.docker.io/the_whole_story/
 http://coreos.com/
 https://github.com/flynn/flynn-spec
 http://www.packer.io/
@@ -104,3 +108,5 @@ https://news.ycombinator.com/item?id=6354396
 http://queue.acm.org/detail.cfm?id=1814327
 http://www.amazon.com/The-Design-Essays-Computer-Scientist/dp/0201362988
 http://oldblog.antirez.com/post/what-is-wrong-with-2006-programming.html
+http://www.infoq.com/presentations/git-index?utm_source=infoq&utm_medium=videos_homepage&utm_campaign=videos_row2
+

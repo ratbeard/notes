@@ -1,9 +1,85 @@
-2014-02-22
+2014-02-23
 ==========
+
+## Debug a nodejs process
+
+Builtin command line debugger:
+
+		node debug cool.js
+
+		# Useful commands:
+		repl, list(9), cb(10), n, c
+
+Get fancy with `node-debug` using a web inspector GUI 
+
+		npm install -g node-debug
+		node-debug cool.js
+
+Attach to an existing process:
+
+		# Start a inspector server process
+		node-inspector
+
+		# Run your app w/ debug flag in another window:
+		node --debug cool.js
+
+		# OR attach to a running node process
+		pgrep -l node
+		kill -s USR1 <pid>
+
+
+Find a pid by name:
+
+		pgrep -l node
+		
+
+Setup vim-snippets.
+Theres a couple different snippet engines, using vim-snippet.  It simply looks
+inside folders named `snippets` in your rtp (vim path).  `_.snippets` are global.
+I forked the repo as these sorts of things should be heavily customized I.M.OHHH.
+It was a little tricky to get Vundle setup to use a local repo as I don't want to
+push/pull constantly, still a few kinks to work out.  Need to use an absolute path,
+wasn't able to get local git repo to work :(
+
+		Bundle 'file:///Users/admin/code/vim-snippets'
+
+After editing a snippets file, to gain access need to:
+
+- commit in the snippets repo
+- run `:BundleInstall!`.  Don't see a way to only refresh a single plugin :(
+- reload? I forget
+
+Mirroring placeholders seems broken, looking at `req` in the coffee snippet file.
+
+
 Installed tabularize vim plugin.  Type `Tab` in visual mode, or in normal: `:Tab /=`
 
-Setting up some vim snippets.
-`_` is global snippets
+
+## Gulp
+
+gulpif seems broken.  TODO make a bug...
+uglify is so schlow
+my nodemon was pretty out of date, not supports nodemon.json and exclude files list
+karma is slamming.  gulp-karma doesn't pass along `files` option, instead files
+should be streamed in `src` to it.
+
+## stream-adventure
+
+Finished node's `stream-adventure` today:
+
+		stream-adventure                      # list files
+		stream-adventure verify program.js    # check answer
+		stream-adventure run program.js       # debug program
+
+## vim-gist
+
+		:Gist         # Gists whole file.  Can select in visual mode.
+		:Gist -a      # anonymous
+		:Gist -p      # private
+		:Gist -l      # list your gists
+
+I configured it to open browser after posting.
+Pretty cool you can pull down, edit gists.  Haven't explored
 
 2014-02-22
 ==========

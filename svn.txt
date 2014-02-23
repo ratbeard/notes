@@ -1,0 +1,28 @@
+
+svn stash:
+
+		svn diff > ~/p<number>-<name>
+		svn svn revert **/*
+		patch -p0 -i ~/p<number-<name>
+
+
+# Git svn
+
+		# -s assumes standard {trunk,branches,tags} layout
+		git svn clone -s https://git-svn-test-app.googlecode.com/svn
+
+		# Pulls down changes, does not apply them
+		git svn fetch
+
+		# Apply changes
+		git svn rebase
+
+		# Push them back up
+		git svn dcommit
+
+		# Create a .gitignore per svn:ignore
+		git svn create-ignore    
+
+		git svn log
+
+

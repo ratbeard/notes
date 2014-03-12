@@ -1,6 +1,11 @@
+
 # 2014-03-11
 
 To search through all content in the chrome inspector, cmd+option+f
+
+Redirect stderr to stdout:
+
+		echo hi 2>&1
 
 # 2014-03-10
 

@@ -1,3 +1,173 @@
+# 2014-03-11
+
+To search through all content in the chrome inspector, cmd+option+f
+
+# 2014-03-10
+
+In less, you can half page up/down w/ just `u` and `d`, no ctrl required.
+
+Raspi temperature demo at MadJS by no0:
+
+1 wire
+avahi-daemon raspberry pi - find pi's on network
+sparkfun.com
+adafruit.com
+alliedelec.com
+maximimintegrated.com
+
+# 2014-03-10
+
+To exit a stalled ssh session press `Enter ~ .`
+
+
+# 2014-03-09
+
+git push assumes id_rsa key.
+
+sudo lxc-attach -n <containerid>
+
+lsb_release -a
+See ubuntu version
+
+"Cat cut your tongue"
+
+Credit cards
+
+Visa and Mastercard use an older, more open, transaction system. Discover and Amex are newer and process the transations themselves, charging more, ~half the adoption in stores.
+1 point = 1 mile = 1 cent.
+Cards with an anual fee tend to waive it the first year.
+Airlines have their own miles which give a much better benifet.  Some cards let you tranfer generic miles to airline miles for a specific ticket, getting much better deal.
+
+Specific airline cards like Visa Delta gold have gotten worse over times, as
+airlines' benifets and miles have gotten worse.  Tied to just that airline.
+Looks like the companion $100 ticket deal ended as well.  The main benefit
+is getting good perks like priority boarding, $200 checked bag credit, etc.
+
+Amex Blue Cash Everyday
+6% on groceries, 3% on gas, makes it best for non travelers.  Accepted at
+costco?
+
+Chase Saphire Premium
+best intro bonus 45,000 miles
+Great customer support
+Generic miles that can move miles to specific airlines to get much better usage
+get bonus back when using miles and each year
+$95/year.  Theres also a free version w/ worse benifits
+Got this one!
+
+Capital One Venture
+Similar to CSP, but earns 2x points on *everything*.
+Airline miles aren't as flexible though.
+Harder to get, worse customer service.
+
+Barclaycar Arrival World MasterCard
+best of both worlds - 2x on everything, 40,000 intro bonus
+Can't move miles around though which is where big savings are
+
+
+# 2014-03-06
+Reactive Programing
+http://www.infoq.com/presentations/reactive-programming-netflix?utm_source=infoq&utm_medium=videos_homepage&utm_campaign=videos_row2
+
+Treat an event source like a collection.
+Advantages: Composable, retry(), timeout(), are easy.
+Autocomplete example is good.
+Visualizing time w/ async events slides is good.
+
+
+
+# 2014-03-05
+Old vim notes:
+
+		[I				show current word in all files
+		^]				goto definition
+		:vne <name>		new file in vertical split
+		^w r			move pane right
+		:!date 		run external command
+		:.!date 	and insert as text
+		ZZ				close file
+		:g/div 		yank all lines w/ div into a buffer
+		g;				jump to last change
+		:cd %:h		change pwd to current file 
+		gqq				format 80 chars
+		'         jump to last edit
+		`
+    :.,64d		delete current to 64
+		guu				lowercase line
+		^O        retrace steps
+		^I				
+
+Global replace:
+
+		:args **/*.coffee
+		:argdo :%s/foo/bar/ge | up
+
+
+2014-03-05
+==========
+Installed htop, its sweet.
+
+		# Snaggle on install.  brew gives great debugging help:
+		brew link --replace automake 
+		brew install htop
+
+
+To ping microsoft.com, since they drop ICMP packets:
+
+		nmap -p 80 microsoft.com
+
+2014-03-04
+==========
+Installed httpie, its sweet.  Didn't work on my linux laptop :(
+
+		# Apparently I should have done: sudo instal pip; pip install httpie
+		sudo easy_install httpie
+
+		# Adds json content type header, assumes localhost by defaul
+		http --json :7777
+
+		# Upload an image simulating an html form
+		http -f POST :7777 name="pema" image@pema.png
+
+2014-03-01
+==========
+## TotalSpace2
+In overviewmode mode, hold shift when hovered over a screen to blow it up.
+In overviewmode mode, hold alt when dragging to place window in same position in new screen.
+Just switched this behavior:
+
+		defaults write com.binaryage.TotalSpaces2 placeWindowsAsDroppedByDefault NO
+		
+Changed the menu icon color:
+
+		defaults write com.binaryage.TotalSpaces2 menuBarIconColor "094be5"
+
+## Bower
+Bower has a bower.json file like package.json
+
+		bower init
+		bower install angular --save
+		bower list --main  # show main entry scripts
+
+Theres a gulp package to build a src from you main entry scripts:
+
+		bowerFiles = require("gulp-bower-files")
+		bowerFiles().pipe(gulp.dest("build"))
+
+2014-02-28
+==========
+Jasmine watch syntax:
+
+		jasmine-node spec --autotest --coffee --watch lib
+
+Jasmine debug:
+
+		node debug node_modules/jasmine-node/lib/jasmine-node/cli.js --coffee spec
+
+2014-02-27
+==========
+Configured ,P to clear ctrlp cache in vim, since F5 key on my linux laptop doesn't work.
+
 2014-02-23
 ==========
 
@@ -79,7 +249,20 @@ Finished node's `stream-adventure` today:
 		:Gist -l      # list your gists
 
 I configured it to open browser after posting.
-Pretty cool you can pull down, edit gists.  Haven't explored
+Pretty cool you can pull down and manage gists.  Requires investigation
+
+## run local irc server
+
+Methinks it will be faster to dev node bots connecting to a local irc server.
+
+		brew install ngircd irssi
+		ngircd
+		irssi -c localhost
+
+Hmm, works but can't use in limechat w/o some dns'n methinks.
+How do I see whos in an irc room!?
+
+http://blog.tremily.us/posts/Local_IRC_server/
 
 2014-02-22
 ==========

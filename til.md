@@ -298,9 +298,6 @@ Angular style guides:
   https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub
 - http://briantford.com/blog/huuuuuge-angular-apps.html
 
-2014-02-20
-==========
-
 
 2014-02-19
 ==========

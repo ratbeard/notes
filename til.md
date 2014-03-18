@@ -1,3 +1,13 @@
+# 2014-03-17
+
+`.1` is not valid in JSON.
+
+`git pop` does not do a drop of there are any merge conflicts.
+To work my way back through old stashes I did (repeat):
+
+		git reset --hard; git stash apply; git stash drop
+		git diff
+
 
 # 2014-03-11
 
